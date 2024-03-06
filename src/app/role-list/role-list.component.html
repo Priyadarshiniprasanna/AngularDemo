@@ -1,0 +1,10 @@
+<div>
+  <h3>Roles</h3>
+  <ul>
+    <li *ngFor="let role of roles">
+      {{ role.role }}
+      <button (click)="onEditRole(role)">Edit</button>
+    </li>
+  </ul>
+  <button (click)="onAddRole()">Add Role</button>
+</div>

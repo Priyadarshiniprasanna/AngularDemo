@@ -1,0 +1,19 @@
+<div class="container">
+  <form [formGroup]="engineerForm" (ngSubmit)="onSubmit()">
+    <div>
+      <label for="name">Name</label>
+      <input type="text" id="name" formControlName="name">
+    </div>
+    <div>
+      <label for="address">Address</label>
+      <input type="text" id="address" formControlName="address">
+    </div>
+    <div formGroupName="roles">
+      <label for="role1">Role 1</label>
+      <input type="text" id="role1" formControlName="role1">
+      <label for="role2">Role 2</label>
+      <input type="text" id="role2" formControlName="role2">
+    </div>
+    <button type="submit">Save</button>
+  </form>
+</div>
